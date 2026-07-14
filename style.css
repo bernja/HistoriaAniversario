@@ -192,7 +192,7 @@ button { font: inherit; }
 
 .concert { color: white; background: radial-gradient(circle at 30% 20%, #5f294d, #171118 70%); }
 .concert .memory-copy h3, .concert .memory-copy time { color: #ffc5d9; }
-.concert .memory-copy p { color: #f4e8ee; }
+.concert .memory-copy p { color: #b05373; }
 
 .final-section {
   position: relative;
@@ -227,7 +227,7 @@ button { font: inherit; }
 .photo-reveal.visible { display: block; animation: revealPhoto 1.1s ease both; }
 .photo-reveal figure { margin: 0; }
 .photo-reveal img { max-height: 72svh; margin: 0 auto; padding: 12px 12px 52px; background: white; box-shadow: 0 35px 80px rgba(0,0,0,.35); }
-.photo-reveal figcaption { max-width: 700px; margin: 34px auto 0; line-height: 1.8; color: #eadde3; }
+.photo-reveal figcaption { max-width: 700px; margin: 34px auto 0; line-height: 1.8; color: #b05373; }
 
 .letter { display: none; width: min(920px, 92vw); margin: 0 auto 80px; }
 .letter.visible { display: block; animation: letterRise 1s ease both; }
@@ -237,7 +237,7 @@ button { font: inherit; }
 .letter-closing { margin-top: 35px; font-family: "Cormorant Garamond", serif; font-size: 1.55rem; }
 .signature { text-align: right; font-family: "Cormorant Garamond", serif; font-size: 2rem; color: var(--pink-dark) !important; }
 
-.final-message { display: none; min-height: 75svh; place-content: center; text-align: center; padding: 70px 25px; color: white; }
+.final-message { display: none; min-height: 75svh; place-content: center; text-align: center; padding: 70px 25px; color:#b05373; }
 .final-message.visible { display: grid; animation: fadeIn 1.2s ease both; }
 .final-message p { margin: 5px; font-family: "Cormorant Garamond", serif; font-size: clamp(2rem, 5vw, 4rem); }
 .final-message h2 { margin: 20px 0 35px; font-family: "Cormorant Garamond", serif; font-size: clamp(3.8rem, 10vw, 8rem); }
