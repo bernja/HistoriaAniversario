@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff7fa">
+  <title>Para mi pequeña pepa ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="Reproducir o pausar música" title="Música">
+    <span class="music-icon">♪</span>
+    <span class="music-label">Música</span>
+  </button>
+
+  <audio id="musica" loop preload="metadata">
+    <source src="audio/nuestra_cancion.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section id="pantallaInicio" class="inicio">
+      <div class="inicio-glow" aria-hidden="true"></div>
+      <div class="inicio-content">
+        <p class="eyebrow">Una pequeña sorpresa para</p>
+        <h1>Mi pequeña pepa</h1>
+        <p class="inicio-copy">Hay alguien que preparó esto con todo el amor de su corazón.</p>
+
+        <button id="entrar" class="envelope-button" type="button" aria-label="Entrar a nuestra historia">
+          <img src="assets/sobre1.png" alt="Sobre de corazón" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+          <span class="fallback-envelope" hidden>💌</span>
+          <span>Haz clic para comenzar</span>
+        </button>
+      </div>
+      <span class="scroll-hint">Nuestra historia comienza aquí</span>
+    </section>
+
+    <div id="historia" hidden>
+      <section class="poem-slide reveal">
+        <p>Si estás leyendo esto, princesa mía</p>
+      </section>
+      <section class="poem-slide reveal">
+        <p>Es porque decidiste aceptar una larga aventura de mi mano</p>
+      </section>
+      <section class="poem-slide reveal">
+        <p>Una aventura hecha especialmente para ti</p>
+      </section>
+      <section class="poem-slide reveal short">
+        <p>Porque hoy</p>
+      </section>
+      <section class="poem-slide reveal highlight">
+        <p>Cumplimos tres años juntitos ❤️</p>
+      </section>
+      <section class="poem-slide reveal short">
+        <p>Y aunque este año</p>
+      </section>
+      <section class="poem-slide reveal">
+        <p>Mi espalda no me permitió llevarte muy lejos</p>
+      </section>
+      <section class="poem-slide reveal">
+        <p>Pero todavía quería ser capaz de crear un lugar</p>
+      </section>
+      <section class="poem-slide reveal highlight">
+        <p>Donde siempre podamos volver</p>
+      </section>
+      <section class="poem-slide reveal short">
+        <p>Pero antes de seguir</p>
+      </section>
+      <section class="poem-slide reveal">
+        <p>Quiero volver casi al principio.</p>
+      </section>
+
+      <section class="chapter-intro reveal">
+        <span>Capítulo I</span>
+        <h2>Nuestros recuerdos</h2>
+        <p>Diez momentos que guardo con muchísimo cariño.</p>
+      </section>
+
+      <section class="memory memory-stack reveal">
+        <div class="memory-inner">
+          <div class="stack" aria-label="Dos fotografías del museo de Lego">
+            <figure class="stack-card back-card">
+              <img src="imagenes/foto2.jpg" alt="Recuerdo del museo de Lego">
+            </figure>
+            <figure class="stack-card front-card">
+              <img src="imagenes/foto1.jpg" alt="Recuerdo del museo de Lego">
+            </figure>
+          </div>
+          <div class="memory-copy">
+            <time datetime="2023-07-05">5 de julio de 2023</time>
+            <h3>Museo de Lego</h3>
+            <p>Aquí fue cuando fuimos al museo de lego</p>
+            <p>Y me di cuenta que esto era una oportunidad única en la vida.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="memory reveal">
+        <div class="memory-inner alternating">
+          <figure class="photo-frame"><img src="imagenes/foto3.JPG" alt="Primera visita de Noelia a mi casa"></figure>
+          <div class="memory-copy">
+            <time datetime="2023-07-23">23 de julio de 2023</time>
+            <h3>Tu segunda casita</h3>
+            <p>Esta fue la primera vez de muchas que vendrías a mi casita, espero que hasta hoy siga siendo un segundo hogar para ti.</p>
+            <p class="small-note">Ya éramos novios.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="memory reveal">
+        <div class="memory-inner reverse">
+          <figure class="photo-frame"><img src="imagenes/foto4.JPG" alt="Recuerdo en casa de Noelia"></figure>
+          <div class="memory-copy">
+            <time datetime="2023-08-03">3 de agosto de 2023</time>
+            <h3>Valió la pena</h3>
+            <p>Ese día me quedé viendo el programa en tu casa y me retaron, pero valió la pena, fui muy feliz y lo volvería a hacer.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="memory reveal birthday">
+        <div class="memory-inner alternating">
+          <figure class="photo-frame landscape"><img src="imagenes/foto5.JPG" alt="Primer cumpleaños de Noelia que celebramos juntos"></figure>
+          <div class="memory-copy">
+            <time datetime="2023-10-31">31 de octubre de 2023</time>
+            <h3>Tu primer cumpleaños juntos</h3>
+            <p>Tu primer cumpleaños que pude celebrarte, fue tan maravilloso. Luego saber que vendrían muchos años más contigo me llena el corazón de emoción.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="memory reveal travel">
+        <div class="memory-inner reverse">
+          <figure class="photo-frame"><img src="imagenes/foto6.jpg" alt="Nuestro primer viaje juntos"></figure>
+          <div class="memory-copy">
+            <time datetime="2024-01-01">1 de enero de 2024</time>
+            <h3>Nuestro primer viaje</h3>
+            <p>El primer viaje juntos, estaba tan emocionado y nervioso por compartir más con tu familia.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="memory reveal family">
+        <div class="memory-inner alternating">
+          <figure class="photo-frame landscape"><img src="imagenes/foto7.JPG" alt="Un día entretenido con risas y comida"></figure>
+          <div class="memory-copy">
+            <time datetime="2024-05-12">12 de mayo de 2024</time>
+            <h3>Risas y comida</h3>
+            <p>Fue un día muy entretenido lleno de risas y comidas gracias al bonachón de mi suegro, gracias Juanmi.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="memory reveal coast">
+        <div class="memory-inner reverse">
+          <figure class="photo-frame"><img src="imagenes/foto8.JPG" alt="Nuestro primer viaje solitos a otra parte de Chile"></figure>
+          <div class="memory-copy">
+            <time datetime="2025-07-15">15 de julio de 2025</time>
+            <h3>Nuestra aventura en solitario</h3>
+            <p>Fue nuestro primer viaje solitos a otro lado de Chile, aún lo recuerdo tan claramente, me dolía mi panza del nervio.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="memory reveal concert">
+        <div class="memory-inner alternating">
+          <figure class="photo-frame"><img src="imagenes/foto9.JPG" alt="Mi primera experiencia en un concierto junto a Noelia"></figure>
+          <div class="memory-copy">
+            <time datetime="2025-11-08">8 de noviembre de 2025</time>
+            <h3>Nuestro concierto</h3>
+            <p>Mi primera experiencia en un concierto junto a ti, la pasé genial en compañía de la persona que más adoro.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="poem-slide reveal dark-slide">
+        <p>Y todavía queda una última cosa...</p>
+      </section>
+
+      <section id="finalSection" class="final-section">
+        <div class="final-heading reveal">
+          <span>Capítulo final</span>
+          <h2>Una carta para ti</h2>
+          <p>Haz clic en el sobre cuando estés lista.</p>
+        </div>
+
+        <div id="finalEnvelope" class="final-envelope reveal" role="button" tabindex="0" aria-label="Abrir carta final">
+          <div class="photo-from-envelope" aria-hidden="true">
+            <img src="imagenes/foto10.JPG" alt="Una imagen especial para Noelia">
+          </div>
+          <img class="envelope-closed" src="assets/sobre1.png" alt="Sobre cerrado" onerror="this.hidden=true;">
+          <img class="envelope-open" src="assets/sobre2.png" alt="Sobre abierto" onerror="this.hidden=true;">
+        
+          <span class="tap-label">Abrir</span>
+        </div>
+
+        <div id="photoReveal" class="photo-reveal" aria-live="polite">
+          <figure>
+            <img src="imagenes/foto10.JPG" alt="Mi niño interior te agradece por todas las alegrías">
+            <figcaption>
+              Una fotito, que aunque no pasó, mi niño interior sí te besa muchas veces por las alegrías que me llegas a dar y los deseos que siempre anhelé al crecer.
+            </figcaption>
+          </figure>
+        </div>
+
+        <article id="letter" class="letter" aria-label="Carta para Noelia">
+          <div class="letter-paper">
+            <h2>Querida Noelia:</h2>
+            <p>Tres pequeños años que, sinceramente, se me han pasado volando. Cada día junto a ti ha sido un disfrute total risas, juegos, bromas y chistes que han llenado mi vida de felicidad.</p>
+            <p>Es por eso que hoy diseñé esta pequeña página para ti. Quería regalarte algo diferente, un lugar al que siempre podamos volver y al que podamos seguir agregando recuerdos, fotos e historias con el paso del tiempo. Ojalá este rincón crezca junto con nosotros.</p>
+            <p>Quiero que llenemos nuestras vidas de sueños y esperanzas. Quiero que trabajemos juntos por ese futuro que tantas veces imaginamos, donde ambos logremos desarrollarnos, cumplir nuestras metas y jamás dejemos atrás al otro.</p>
+            <p>Quiero seguir siendo parte de tu familia, y que tú siempre seas parte de la mía. Más que eso, quiero que algún día nosotros también formemos una familia y sigamos cumpliendo todas esas cosas que tantas veces soñamos.</p>
+            <p>Gracias, Noelia Marín, por ser la mujer de mis sueños, mi luz guía y mi princesa. Sin ti no habría sido capaz de vivir muchas de las experiencias más bonitas de mi vida como ir a mi primer concierto, atreverme a trabajar, conocer Santiago de tu mano, descubrir tantos lugares y compartir demasiadas delicias contigo.</p>
+            <p>Todo eso, y mucho más, es una fortuna que cualquiera podría desear.</p>
+            <p>Eres mi tesoro, el que jamás quisiera compartir. Los besos que nunca rechazaré, los abrazos que siempre querré recibir y las risas que espero escuchar durante toda mi vida.</p>
+            <p>Gracias de todo corazón, pepita.</p>
+            <p class="letter-closing"><strong>Feliz tercer aniversario.<br>Te amo muchísimo.</strong></p>
+            <p class="signature">— Pepe ❤️</p>
+          </div>
+        </article>
+
+        <div id="finalMessage" class="final-message">
+          <p>Gracias por estos tres años.</p>
+          <p>Y por todos los que aún nos quedan por vivir.</p>
+          <h2>Te amo ❤️</h2>
+          <button id="volverInicio" type="button">Volver al principio</button>
+          <small>Hecho con todo mi amor · Pepe · 2026</small>
+        </div>
+
+        <div id="petalContainer" class="petal-container" aria-hidden="true"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

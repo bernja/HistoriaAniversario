@@ -1,0 +1,14 @@
+PROYECTO PARA NOELIA
+
+1. Abre la carpeta "Para_Noelia" con Visual Studio Code.
+2. Coloca estos archivos dentro de la carpeta assets:
+   - sobre1.png
+   - sobre2.png
+   - petalo.png
+3. Coloca tu canción dentro de la carpeta audio y llámala exactamente:
+   - nuestra_cancion.mp3
+4. Abre index.html con Live Server o con doble clic.
+
+El proyecto ya incluye las 10 fotos.
+Si no colocas los sobres o pétalos, la página mostrará diseños alternativos.
+Si no colocas la canción, todo funcionará excepto la música.
